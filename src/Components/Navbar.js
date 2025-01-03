@@ -1,18 +1,19 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-    return (
-        <nav>
-            <ul>
-                <li><Link to="/">หน้าหลัก</Link></li>
-                <li><Link to="/about">เกี่ยวกับเรา</Link></li>
-                <li><Link to="/courses">หลักสูตร</Link></li>
-                <li><Link to="/contact">ติดต่อเรา</Link></li>
-            </ul>
-        </nav>
-    );
-};
+function Navbar() {
+  return (
+    <nav>
+      <div className="container">
+        <Link to="/" className="navbar-brand">เว็บไซต์หลัก</Link>
+        <div className="navbar-links">
+          <Link to="/about">เกี่ยวกับเรา</Link>
+          <Link to="/courses">หลักสูตร</Link>
+          <Link to="/contact">ติดต่อเรา</Link>
+        </div>
+      </div>
+    </nav>
+  );
+}
 
 export default Navbar;

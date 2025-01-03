@@ -1,0 +1,53 @@
+/* เพิ่มการตกแต่งเบื้องต้น */
+.home-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  
+  p {
+    color: #6c757d;
+    font-size: 1.1rem;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* ทำให้ภาพตอบสนองกับขนาดหน้าจอ */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* เพิ่มการตกแต่งของคอนเทนเนอร์ */
+  .row {
+    margin-top: 30px;
+  }
+  
+  .col-md-6 {
+    padding: 15px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* ปรับแต่งขอบของภาพ */
+  .shadow {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mb-4 {
+    margin-bottom: 2rem;
+  }
+  

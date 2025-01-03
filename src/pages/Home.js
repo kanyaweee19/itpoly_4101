@@ -1,13 +1,18 @@
 import React from 'react';
 
-function Home() {
-    return (
-        <div>
-            <h2>Welcome to IT Department</h2>
-            <p>ปรัชญา: มุ่งมั่นสร้างคนคุณภาพ สู่ความเป็นเลิศในสายอาชีพ</p>
-            <img src="/path/to/your/image.jpg" alt="กิจกรรม" />
-        </div>
-    );
-}
+const Home = () => {
+  return (
+    <div className="text-center">
+      <h2>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h2>
+      <p className="lead">อัตลักษณ์  :  “เป็นคนดี มีความรู้ คู่สังคม”
+    เอกลักษณ์  :  “สร้างคนดี ให้มีความรู้ สู่สังคม”</p>
+      <img
+        src="https://www.lannapoly.ac.th/web/gallery/20241121-094109.jpg"
+        alt="Banner"
+        className="img-fluid rounded"
+      />
+    </div>
+  );
+};
 
 export default Home;

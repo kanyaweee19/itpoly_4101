@@ -1,0 +1,51 @@
+/* src/pages/About.css */
+
+/* กำหนดสไตล์สำหรับหน้า About */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* กำหนดสไตล์สำหรับหัวข้อ */
+  .section-title {
+    font-size: 2rem;
+    color: #388e3c;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* กำหนดสไตล์สำหรับข้อความภายในแต่ละส่วน */
+  .section-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* สไตล์สำหรับรายการประวัติ */
+  .history-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .history-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* สไตล์สำหรับรายการผู้มีอุปการะคุณ */
+  .team-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .team-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* กำหนดสไตล์ให้ข้อความเป็นตัวหนาในบางจุด */
+  strong {
+    font-weight: bold;
+  }
+  

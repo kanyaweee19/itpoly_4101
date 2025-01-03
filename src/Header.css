@@ -1,0 +1,33 @@
+/* นำเข้า Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lora:wght@400;700&display=swap');
+
+/* ตกแต่งพื้นหลังของ Header */
+.header {
+  background: linear-gradient(45deg, #388e3c, #81c784); /* สีพื้นหลังสวยๆ */
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงาเบาๆ ให้ดูมีมิติ */
+  border-radius: 8px; /* ขอบมน */
+}
+
+/* การตกแต่งข้อความใน Header */
+.header-title {
+  font-family: 'Lora', serif; /* ฟอนต์ที่สวยงาม */
+  font-size: 2.5rem; /* ขนาดตัวอักษร */
+  font-weight: 700;
+  letter-spacing: 2px; /* ระยะห่างระหว่างตัวอักษร */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ข้อความเด่นขึ้น */
+  margin: 0; /* ลบ margin */
+}
+
+/* เพิ่มการตอบสนองบนอุปกรณ์มือถือ */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header-title {
+    font-size: 2rem; /* ลดขนาดข้อความในมือถือ */
+  }
+}

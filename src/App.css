@@ -1,80 +1,98 @@
-/* Global Styles */
-* {
+/* ตกแต่งพื้นหลังและส่วนต่าง ๆ ของหน้าเว็บ */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* App container */
-.app-container {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-/* Main content area */
-.main-content {
-  flex-grow: 1;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;
-  background-color: #f4f4f4; /* เพิ่มพื้นหลังให้ดูสวยงาม */
 }
 
-/* Header Styles */
-.header {
-  background-color: #333;
+header {
+  background-color: #007bff;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
-.header-title {
-  font-size: 24px;
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
   text-align: center;
 }
 
-/* Navigation Styles */
-.nav-list {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  margin-top: 20px; /* ให้มีระยะห่างจาก title */
+nav {
+  background-color: #343a40;
+  padding: 10px 0;
 }
 
-.nav-item {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-.nav-link {
+nav a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  margin: 0 10px;
 }
 
-.nav-link:hover {
-  background-color: #555; /* เพิ่มเอฟเฟ็กต์ hover */
+nav a:hover {
+  background-color: #007bff;
   border-radius: 5px;
 }
 
-/* Footer Styles */
-.footer {
-  background-color: #333;
+/* ปรับแต่งสำหรับเนื้อหาหลักสูตร */
+.content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+h2 {
+  color: #007bff;
+}
+
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
   padding: 20px;
-  margin-top: auto; /* ให้ footer อยู่ด้านล่างสุด */
 }
 
-.footer-container {
-  text-align: center;
-  font-size: 14px;
+.card-title {
+  color: #007bff;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .nav-item {
-      display: block;
-      margin: 10px 0;
-  }
+.card-text {
+  color: #6c757d;
+}
+
+/* เพิ่มการจัดระเบียบช่องว่างต่าง ๆ */
+.mt-4 {
+  margin-top: 4rem;
 }

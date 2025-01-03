@@ -1,0 +1,82 @@
+/* พื้นหลังของ Navbar */
+.navbar {
+    background-color: #388e3c; /* สีเขียวเข้ม */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+  }
+  
+  /* การจัดการกับคอนเทนเนอร์ */
+  .container {
+    display: flex;
+    justify-content: space-between; /* จัดตำแหน่งให้ชื่อเว็บไซต์อยู่ด้านซ้ายและลิงก์เมนูอยู่ด้านขวา */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* การตกแต่ง Navbar-brand (ชื่อเว็บไซต์) */
+  .navbar-brand {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px; /* เพิ่มช่องว่างระหว่างชื่อเว็บไซต์และลิงก์ */
+  }
+  
+  /* การตกแต่งลิงก์ใน Navbar */
+  .navbar-links {
+    display: flex;
+    gap: 20px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+  }
+  
+  /* การตกแต่งลิงก์แต่ละลิงก์ */
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* เปลี่ยนสีลิงก์เมื่อ hover */
+  .navbar-links a:hover {
+    background-color: #f1f1f1;
+    color: #388e3c;
+    transform: translateY(-2px); /* เพิ่มเอฟเฟกต์เมื่อ hover */
+  }
+  
+  /* การปรับขนาดลิงก์เมื่อคลิก */
+  .navbar-links a:active {
+    background-color: #388e3c;
+    color: white;
+  }
+  
+  /* Responsive Design: Navbar ให้ดูดีในอุปกรณ์มือถือ */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* จัดลำดับให้อยู่ในแนวตั้ง */
+      align-items: flex-start;
+    }
+  
+    .navbar-brand {
+      margin-bottom: 10px; /* ให้มีระยะห่างระหว่างชื่อเว็บไซต์กับเมนู */
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* เมนูลิงก์จะเรียงในแนวตั้ง */
+      width: 100%;
+      padding-top: 10px;
+      align-items: flex-start;
+      justify-content: space-around; /* จัดลำดับให้เมนูเยื้องไปทางซ้าย */
+    }
+  
+    .navbar-links a {
+      padding: 10px;
+      width: 100%; /* ให้ลิงก์เต็มความกว้าง */
+      text-align: left;
+      margin-bottom: 5px; /* เพิ่มระยะห่างระหว่างลิงก์ */
+    }
+  }
+  
